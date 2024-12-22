@@ -1,0 +1,10 @@
+name = "markov_partition"
+version = "0.1.0"
+defaultTargets = ["markov_partition"]
+
+[[lean_lib]]
+name = "MarkovPartition"
+
+[[lean_exe]]
+name = "markov_partition"
+root = "Main"
