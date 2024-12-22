@@ -1,0 +1,26 @@
+\section{Introduction}
+
+Considérons $f \colon M \longrightarrow M$ un difféomorphisme d'une variété compacte $M$
+
+\begin{definition}
+  Soit $\Lambda \subseteq X$ un sous-ensemble stable par $f$ de $M$.
+  Une partition de Markov $\mathcal R$ de $\Lambda$ est une famille d'ensembles $(R_i)_{i \in \llbracket 1, n\rrbracket}$ appelés \textit{rectangles},
+  vérifiant les propriétés suivantes pour tout $i, j, k \leq n$ :
+  \begin{enumerate}
+    \item $\overline{\Int{R_i}} = R_i$,
+    \item Si $i \not= j$, alors $\Int{R_i} \cap \Int{R_j} = \emptyset$,
+    \item Les $(R_i)$ recouvrent $\Lambda$ : $\Lambda \subseteq \bigcup_i{R_i}$,
+    \item Si $f^m(\Int{R_i}) \cap \Int{R_j} \cap \Lambda \not= \emptyset$ et $f^n(\Int{R_j})\cap \Int{R_k} \cap \Lambda \not= \emptyset$
+      pour $m,n \in \Z$, alors $f^{m+n}(\Int{R_i})\cap \Int{R_k} \cap \Lambda \not= \emptyset$.
+  \end{enumerate}
+
+  Pour une partition de Markov $\mathcal R = (R_i)_{1 \leq i \leq n}$,
+  on associe une matrice $A$ à coefficients dans $\left\{0, 1\right\}$, appelé \textit{matrice d'incidence}, définie par
+  $$\forall i,j \in \llbracket 1, n\rrbracket, \hspace{1em} A_{i,j} = 1 \iff f(\Int{R_i}) \cap \Int{R_j} \not= \emptyset.$$
+\end{definition}
+
+\begin{theorem}
+  Soit $\mathcal R = (R_i)_{1\leq i\leq n}$ une partition de Markov de $\Lambda \subseteq M$ et $(\s_A, \sigma)$ l'espace
+  de Bernoulli associé à la matrice d'incidence de la partition $\mathcal R$.
+  Alors, ...
+\end{theorem}
